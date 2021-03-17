@@ -1,0 +1,147 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1. Vị Trí
+2. Kích Thước (width, height)
+3. Màu sắc
+4. Hình dáng (kiểu chữ, hình tròn, hình vuông,...)
+ */
+
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+
+#nav li {
+    position: relative;
+    display: inline-block;
+}
+
+#nav > li > a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: inline-block;
+}
+
+#nav .subnav {
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%),
+                0 4px 20px 0 rgb(0 0 0 / 19%);
+    display: none;
+    min-width: 160px;
+}
+#nav .subnav li {
+    width: 100%;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 8px 16px;
+    line-height: 16px;
+}
+/* icon */
+#nav .nav-angle-down {
+    font-size: 14px;
+}
+
+#nav .ti-search {
+    padding: 0px 21px;
+    line-height: 46px;
+    color: #fff;
+    display: inline-block;
+    float: right;
+}
+
+#nav .ti-search:hover {
+    background-color: #F44336;
+    cursor: pointer;
+}
+/* icon */
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
+    background-color: #F44336;
+    color: #fff;
+    display: inline-block;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    animation-name: backgroundimg;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+
+ #slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.head-text {
+    font-weight: 300;
+}
+
+.tail-text {
+    margin-top: 20px;
+} 
+
+@keyframes backgroundimg {
+    0% {
+        background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    }
+    33% {
+        background: url('/assets/img/slider/slider2.jpg') top center / cover no-repeat;
+    }
+    66% {
+        background: url('/assets/img/slider/slider3.jpg') top center / cover no-repeat;
+    }
+    100% {
+        background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    }
+    
+}
+
+#content {
+
+}
+
+#footer {
+  
+    
+}
